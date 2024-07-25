@@ -153,8 +153,8 @@ python3 wrangle_data.py >> ../$LOGFILE
 The advantages of using the wrapper commands include:
 
 * They use executable names defined by `local_env.sh`, so that the code can work across machines with different local configurations
-* They clean up LaTex auxiliary files
-* They copy Latex output files to the `output` directory, whereas `pdflatex` places output in the same directory as the code by default
+* They clean up LaTeX auxiliary files
+* They copy LaTeX output files to the `output` directory, whereas `pdflatex` places output in the same directory as the code by default
 * They copy default Stata logs into `/output/make.log`
 * They handle differences in Stata command line syntax across operating systems
 * They handle cases where scripts terminate with errors in a friendly way
@@ -168,7 +168,7 @@ TBD
 
 ## Keeping inputs and outputs clear
 
-Code in a module's `/source/` directory should only call inputs from the module's `/input/` directory, or, in the case ofinputs that are produced within the module itself, from `/output/` or `temp` (see [here](#working-with-temporary-or-intermediate-files) for more detail on `/temp/` directories. **Code should never reference files elsewhere in the repository, or files external to the repository, directly**.
+Code in a module's `/source/` directory should only call inputs from the module's `/input/` directory, or, in the case of inputs that are produced within the module itself, from `/output/` or `/temp/` (see [here](#working-with-temporary-or-intermediate-files) for more detail on `/temp/` directories). **Code should never reference files elsewhere in the repository, or files external to the repository, directly**.
 
 The module's `input` directory should be populated by the module's `get_inputs.sh` script. It should never be modified directly by the user.
 
