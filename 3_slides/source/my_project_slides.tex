@@ -1,80 +1,82 @@
-\documentclass[12pt]{article}
+\documentclass[10pt,t,aspectratio=169]{beamer}
 
-%\usepackage{mathptmx}
-\usepackage{float}
-\usepackage{amsmath}
-\usepackage{amsthm}
+\usetheme[progressbar=frametitle]{metropolis}
+
+%\usepackage{helvet}
+%\usepackage[sfdefault,light]{FiraSans}
+\usepackage[sfdefault]{inter}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
 \usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[authoryear]{natbib}
-\usepackage{setspace}
-\usepackage{geometry}
-\usepackage{datetime}
+\PassOptionsToPackage{no-math}{fontspec}
+\usepackage{graphicx} 
+\usepackage{hyperref} 
+\usepackage{multirow} 
+\usepackage{xspace}
 \usepackage{booktabs}
-\usepackage[english]{babel}
-\usepackage{times}
-\usepackage{url}
-\usepackage[small]{caption}
-\usepackage[bottom,hang,flushmargin]{footmisc}
 
-\DeclareMathOperator{\Var}{Var}
-\DeclareMathOperator{\Corr}{Corr}
-\DeclareMathOperator{\Cov}{Cov}
-\DeclareMathOperator{\E}{E}
+\setbeamercolor{normal text}{fg=mDarkTeal,bg=white}
+\definecolor{cardinalred}{rgb}{0.549, 0.082, 0.082}
+\setbeamercolor{progress bar}{ fg = white }
+\setbeamercolor{title separator}{ fg = cardinalred}
+\setbeamercolor{progress bar in section page}{ fg = cardinalred }
 
-\bibliographystyle{apalike}
-\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
-\onehalfspacing
+\newtheorem{proposition}{Proposition} 
 
 \title{O Praeclarum Titulum}
-
-\author{\noindent 
-Author 1, \textit{Affiliation}
-    \thanks{Acknowledgements}\\
-Author 2, \textit{Affiliation}
-}
-
+\subtitle{Lorem ipsum dolor}
+% \date{\today}
 \date{}
+\author{Author 1 (Affiliation) \\
+        Author 2 (Affiliation)}
 
 \begin{document}
 
 \maketitle
 
-\begin{abstract}
-\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{frame}{Motivation}
 
-\bigskip{}
-\end{abstract}
+    motivation
 
-\pagebreak{}
-\begin{spacing}{1.4}
+\end{frame}
 
-\section{Introduction}
+\begin{frame}{This paper}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate odio ut enim blandit. Elementum pulvinar etiam non quam. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Quis auctor elit sed vulputate mi sit. Pretium quam vulputate dignissim suspendisse in. Amet mattis vulputate enim nulla aliquet porttitor. Fermentum dui faucibus in ornare. In egestas erat imperdiet sed. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Egestas integer eget aliquet nibh praesent tristique magna sit. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Neque egestas congue quisque egestas diam in arcu. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Augue eget arcu dictum varius duis at. Elementum pulvinar etiam non quam lacus suspendisse faucibus. Congue mauris rhoncus aenean vel elit. Dignissim suspendisse in est ante in nibh mauris cursus.
+    this paper
+  
+\end{frame}
 
-Congue quisque egestas diam in arcu cursus euismod. Ipsum a arcu cursus vitae. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Nisl tincidunt eget nullam non. Sed faucibus turpis in eu mi bibendum. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Bibendum arcu vitae elementum curabitur vitae. Pretium fusce id velit ut tortor pretium viverra suspendisse. Congue quisque egestas diam in arcu. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Et egestas quis ipsum suspendisse. Molestie at elementum eu facilisis sed. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Odio facilisis mauris sit amet massa vitae. Ullamcorper eget nulla facilisi etiam dignissim diam quis.
+\section{Background}
 
-At consectetur lorem donec massa sapien faucibus et molestie. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Faucibus a pellentesque sit amet. Purus viverra accumsan in nisl. Enim neque volutpat ac tincidunt vitae semper. Enim nunc faucibus a pellentesque sit amet. Pellentesque sit amet porttitor eget. Placerat vestibulum lectus mauris ultrices eros. Mi sit amet mauris commodo quis imperdiet massa tincidunt. Quis eleifend quam adipiscing vitae proin sagittis nisl. Non odio euismod lacinia at quis risus sed vulputate. A cras semper auctor neque vitae tempus quam pellentesque. Sit amet mattis vulputate enim nulla aliquet. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Ultricies mi quis hendrerit dolor. Non nisi est sit amet facilisis magna etiam. In hac habitasse platea dictumst vestibulum rhoncus est. Sed risus pretium quam vulputate dignissim suspendisse in est ante.
+\begin{frame}{xxx}
 
-\section{Data} 
-\label{Sec:Data}
+    xxx
+  
+\end{frame}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\section{Data}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{frame}{xxx}
 
-\section{Results} 
-\label{Sec:Results}
+    xxx
+  
+\end{frame}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\section{Results}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{frame}{xxx}
+
+    xxx
+  
+\end{frame}
 
 \section{Conclusion}
-\label{Sec:Conclusion}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{frame}{xxx}
 
-\end{spacing}
+    xxx
+  
+\end{frame}
+
 \end{document}
