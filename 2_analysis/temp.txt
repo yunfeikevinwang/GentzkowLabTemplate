@@ -1,4 +1,0 @@
-make.sh
-output
-source
-temp.txt

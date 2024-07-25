@@ -21,5 +21,8 @@ run_latex() {
     rm -f "${programname}.fdb_latexmk" 
     rm -f "${programname}.fls" 
     rm -f "${programname}.synctex.gz"
+    rm -f "${programname}.nav" 
+    rm -f "${programname}.snm" 
+    rm -f "${programname}.toc" 
 }
 

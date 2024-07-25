@@ -13,5 +13,3 @@ ${SHELL} 2_analysis/make.sh
 ${SHELL} 3_slides/make.sh
 ${SHELL} 4_paper/make.sh
 
-# Uncomment out when you need to use the PPTX to PDF Extension
-#${SHELL} 5_pptx/make.sh
