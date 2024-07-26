@@ -17,7 +17,7 @@
 
 # Overview
 
-This repository template is designed to provide a simple, extendable, and
+This template is designed to provide a simple, extendable, and
 reproducible framework that allows teams of researchers to to collaborate
 using multiple software tools (e.g., Python, R, Stata, Latex) across multiple 
 platforms (Linux/MacOS, Windows).
