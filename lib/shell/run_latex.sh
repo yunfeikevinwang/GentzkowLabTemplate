@@ -5,14 +5,13 @@ run_latex() {
 
     # Get arguments
     programname=$(basename "$1" .tex)
-    outputdir="$2"
-    logfile="$3"
+    logfile="$2"
 
     echo "Executing: latexmk ${programname}.tex -pdf -bibtex"
     (latexmk "${programname}.tex" -pdf -bibtex >> "${logfile}" 2>&1)
 
     # Clean up
-    mv "${programname}.pdf" "${outputdir}"
+    mv "${programname}.pdf" output
     rm -f "${programname}.aux"
     rm -f "${programname}.bbl"
     rm -f "${programname}.blg"
