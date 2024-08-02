@@ -13,6 +13,7 @@ source "${REPO_ROOT}/lib/shell/check_setup.sh"
 
 # Load settings & tools
 source "${REPO_ROOT}/local_env.sh"
+source "${REPO_ROOT}/lib/shell/run_shell.sh"
 #source "${REPO_ROOT}/lib/shell/run_python.sh"
 #source "${REPO_ROOT}/lib/shell/run_stata.sh"
 #source "${REPO_ROOT}/lib/shell/run_R.sh"
@@ -37,14 +38,15 @@ echo -e "\n\nMaking module \033[35m${MODULE}\033[0m with shell ${SHELL}"
 # after scripts are run)
 (
     cd "${MAKE_SCRIPT_DIR}"
-    echo -e "Started at $(date '+%Y-%m-%d %H:%M:%S')"
+    echo -e "make.sh started at $(date '+%Y-%m-%d %H:%M:%S')"
 
     cd source
+    run_shell my_shell_script.sh "${LOGFILE}"
 	# run_python my_python_script.py "${LOGFILE}"
 	# run_R my_r_script.R "${LOGFILE}"
 	# run_stata my_r_script.do "${LOGFILE}"
     # run_latex my_latex_file.tex "${LOGFILE}"
 
-    echo -e "Finished at $(date '+%Y-%m-%d %H:%M:%S')"
-
 ) 2>&1 | tee "${LOGFILE}"
+
+echo -e "make.sh finished at $(date '+%Y-%m-%d %H:%M:%S')" | tee -a "${LOGFILE}"
