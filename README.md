@@ -2,7 +2,7 @@ This repository is based on the GentzkowLabTemplate, copyright 2024 by Matthew G
 
 # External links
 
-Use this section for links to resources external to this repository that are part of the project.
+Use this section to document resources external to this repository that are part of the project.
 
 # Setup
 
