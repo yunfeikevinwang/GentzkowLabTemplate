@@ -1,4 +1,4 @@
-This directory has example scripts that illustrate how to use the GentzkowLabTemplate with LaTex.
+This directory has example scripts that illustrate how to use the GentzkowLabTemplate with LaTeX.
 
 See the Examples section of the [template instructions](xxx) for the general procedure for using example scripts.
 
