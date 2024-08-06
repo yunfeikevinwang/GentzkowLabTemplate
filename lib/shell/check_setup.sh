@@ -6,7 +6,7 @@ if [ ! -f "${REPO_ROOT}/local_env.sh" ]; then
     exit 1
 fi
 
-# Check if run_all.sh exists and will provie a warning, not error
+# Check if run_all.sh exists and will provide a warning, not error
 if [ ! -f "${REPO_ROOT}/run_all.sh" ]; then
     echo "The file run_all.sh does not exist in the directory currently specified as the repository root. This may mean that the variable REPO_ROOT in make.sh is set incorrectly. The variable REPO_ROOT should be a relative path pointing to the top level of the repository."
 fi
