@@ -13,7 +13,7 @@ if [ ! -f "${REPO_ROOT}/local_env.sh" ]; then
     cp "${REPO_ROOT}/lib/setup/local_env_template.sh" "${REPO_ROOT}/local_env.sh"
 fi
 
-# Check if run_all.sh exists and will provie a warning, not error
+# Check if run_all.sh exists and will provide a warning, not error
 if [ ! -f "${REPO_ROOT}/run_all.sh" ]; then
     echo "The file run_all.sh does not exist in the directory currently specified"
     echo "in the variable REPO_ROOT. This may mean that REPO_ROOT in your make.sh"
