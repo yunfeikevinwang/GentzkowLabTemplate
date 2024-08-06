@@ -1,6 +1,6 @@
 This directory has example scripts that illustrate how to use the GentzkowLabTemplate with LaTeX.
 
-See the Examples section of the [template instructions](xxx) for the general procedure for using example scripts.
+See the Examples section of the [template instructions](https://github.com/gentzkow/GentzkowLabTemplate/wiki#examples) for the general procedure for using example scripts.
 
 Specific details relevant to this directory:
 * `my_project_slides.tex` is an example file for slides. It should be placed in the `/3_slides/` module's `/source/` directory.
