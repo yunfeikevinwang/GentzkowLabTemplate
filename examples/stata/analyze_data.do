@@ -5,6 +5,7 @@
 clear all
 adopath + "../../lib/stata"
 set linesize 100
+set scheme stcolor
 
 * =============================================================================
 
