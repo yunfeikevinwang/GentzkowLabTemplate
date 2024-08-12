@@ -28,7 +28,6 @@ mkdir -p "${MAKE_SCRIPT_DIR}/output"
 # (Make sure this section is updated to pull in all needed input files!)
 rm -rf "${MAKE_SCRIPT_DIR}/input"
 mkdir -p "${MAKE_SCRIPT_DIR}/input"
-# cp "${REPO_ROOT}/0_raw/mydata.csv" "${MAKE_SCRIPT_DIR}/input"
 
 # Tell user what we're doing
 echo -e "\n\nMaking module \033[35m${MODULE}\033[0m with shell ${SHELL}"
