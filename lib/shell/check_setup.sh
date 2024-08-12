@@ -21,5 +21,13 @@ if [ ! -f "${REPO_ROOT}/run_all.sh" ]; then
     echo "to the top level of the repository."
 fi
 
+# Check that Git LFS is installed
+if [! command -v git-lfs]; then
+    echo "Warning: It looks like Git Large File Storage (LFS) is not installed."
+    echo "You should install it before using this repository to make sure that"
+    echo "large files are handled correctly. See https://git-lfs.com/ for more"
+    echo "information."
+fi
+
 # Add other checks as needed
 
