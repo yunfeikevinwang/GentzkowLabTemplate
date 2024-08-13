@@ -33,5 +33,5 @@ fi
 
 
 # Setup Completed
-echo "Complete setup."
+echo "Setup check complete."
 
