@@ -31,3 +31,6 @@ fi
 
 # Add other checks as needed
 
+
+# Setup Completed
+echo "Complete setup."

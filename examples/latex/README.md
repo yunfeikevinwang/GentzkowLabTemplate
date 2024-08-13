@@ -7,7 +7,7 @@ See the Examples section of the [template instructions](https://github.com/gentz
 * `my_project_slides.tex` is an example file for slides.
 * `my_project.tex` is an example file for a paper, and `my_project.bib` is the associated BibTeX file.
 
-### Steps to set up the LaTex example for building **slides** with Beamer
+### Steps to set up the LaTeX example for building **slides** with Beamer
 
 1. Place `my_project_slides.tex` in `3_slides/source/`
 2. Replace these lines in `3_slides/make.sh`
@@ -28,7 +28,7 @@ See the Examples section of the [template instructions](https://github.com/gentz
     run_latex my_project_slides.tex "${LOGFILE}"
     ```
 
-### Steps to set up the LaTex example for building a **paper**
+### Steps to set up the LaTeX example for building a **paper**
 
 1. Place `my_project.tex` and `my_project.bib` in `4_paper/source/`
 2. Replace these lines in `4_paper/make.sh`
