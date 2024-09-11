@@ -1,6 +1,7 @@
 #!/bin/bash
 
 unset run_latex
+unset cleanup
 run_latex() {
 
     # Get arguments
@@ -14,22 +15,29 @@ run_latex() {
     else
         outputdir="../output"
     fi
+    
+    # Clean up
+    cleanup() {
+        mv "${programname}.pdf" ${outputdir}
+        rm -f "${programname}.aux" \
+              "${programname}.bbl" \
+              "${programname}.blg" \
+              "${programname}.log" \
+              "${programname}.out" \
+              "${programname}.fdb_latexmk" \
+              "${programname}.fls" \
+              "${programname}.synctex.gz" \
+              "${programname}.nav" \
+              "${programname}.snm" \
+              "${programname}.toc"
+    }
 
+    # Ensure cleanup is called on exit
+    trap 'cleanup' EXIT
+
+    
     echo "Executing: latexmk ${programname}.tex -pdf -bibtex"
     (latexmk "${programname}.tex" -pdf -bibtex >> "${logfile}" 2>&1)
 
-    # Clean up
-    mv "${programname}.pdf" ${outputdir}
-    rm -f "${programname}.aux"
-    rm -f "${programname}.bbl"
-    rm -f "${programname}.blg"
-    rm -f "${programname}.log" 
-    rm -f "${programname}.out"
-    rm -f "${programname}.fdb_latexmk" 
-    rm -f "${programname}.fls" 
-    rm -f "${programname}.synctex.gz"
-    rm -f "${programname}.nav" 
-    rm -f "${programname}.snm" 
-    rm -f "${programname}.toc" 
 }
 
