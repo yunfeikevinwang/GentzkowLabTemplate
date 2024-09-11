@@ -57,13 +57,13 @@ See the Examples section of the [template instructions](https://github.com/gentz
     with
   
     ```
-    cp "${REPO_ROOT}/2_analysis/output/*.jpg" "${MAKE_SCRIPT_DIR}/input/"
-    cp "${REPO_ROOT}/2_analysis/output/*.tex" "${MAKE_SCRIPT_DIR}/input/"
+    cp "${REPO_ROOT}/2_analysis/output/"*.jpg "${MAKE_SCRIPT_DIR}/input/”
+    cp "${REPO_ROOT}/2_analysis/output/"*.tex "${MAKE_SCRIPT_DIR}/input/”
     ```
 
     Copying the input files from the output of `2_analysis` is the way the template is designed to be used. But if you want to see how to build the paper without setting up the anlaysis scripts, you can copy the inputs directly from the `/examples/inputs_for_examples/` directory by replacing the above line with
 
     ```
-    cp "${REPO_ROOT}/examples/inputs_for_examples/*.jpg" "${MAKE_SCRIPT_DIR}/input/"
-    cp "${REPO_ROOT}/examples/inputs_for_examples/*.tex" "${MAKE_SCRIPT_DIR}/input/"
+    cp "${REPO_ROOT}/examples/inputs_for_examples/"*.jpg "${MAKE_SCRIPT_DIR}/input/"
+    cp "${REPO_ROOT}/examples/inputs_for_examples/"*.tex "${MAKE_SCRIPT_DIR}/input/"
     ```
