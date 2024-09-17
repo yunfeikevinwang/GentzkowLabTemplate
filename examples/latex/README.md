@@ -57,7 +57,7 @@ See the Examples section of the [template instructions](https://github.com/gentz
     with
   
     ```
-    cp "${REPO_ROOT}/2_analysis/output/"*.jpg "${MAKE_SCRIPT_DIR}/input/”
+    cp "${REPO_ROOT}/2_analysis/output/"*.jpg "${MAKE_SCRIPT_DIR}/input/"
     cp "${REPO_ROOT}/2_analysis/output/"*.tex "${MAKE_SCRIPT_DIR}/input/"
     ```
 
