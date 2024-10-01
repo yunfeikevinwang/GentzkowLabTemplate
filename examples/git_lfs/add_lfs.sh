@@ -6,6 +6,11 @@ if ! git lfs &> /dev/null; then
   exit 1
 fi
 
+# Store current wd, cd into repo root
+ORIGINAL_DIR=$(pwd)
+REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
+cd "$REPO_ROOT"
+
 git lfs install
 
 # Add LFS tracking
@@ -100,3 +105,6 @@ else
   echo -e "\nAll applicable files have been removed from cache and re-added to Git LFS."
   echo "Remember to commit the changes by running: git commit -m 'Add files to Git LFS'"
 fi
+
+# Return to the original working directory
+cd "$ORIGINAL_DIR"
