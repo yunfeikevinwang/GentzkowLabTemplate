@@ -5,6 +5,8 @@
 library(tidyverse)
 library(stargazer)
 library(ggplot2)
+library(estimatr)
+library(modelsummary)
 
 # Paths
 input_dir <- "../../1_data/output"
@@ -20,21 +22,19 @@ main <- function() {
 }
 
 regression_table <- function(data) {
-  reg_cty <- lm(displ ~ cty, data = data)
+  reg_cty <- lm_robust(displ ~ cty, data = data, clusters = year)
   summary(reg_cty)
 
-  reg_hwy <- lm(displ ~ hwy, data = data)
+  reg_hwy <- lm_robust(displ ~ hwy, data = data, clusters = year)
   summary(reg_hwy)
 
-  reg_hwy_cty <- lm(displ ~ hwy + cty, data = data)
+  reg_hwy_cty <- lm_robust(displ ~ hwy + cty, data = data, clusters = year)
   summary(reg_hwy_cty)
 
-  stargazer(reg_cty, reg_hwy, reg_hwy_cty, title = "Results", align = TRUE,
-            dep.var.labels = c("Engine displacement (L)"),
-            covariate.labels = c("City fuel economy (mpg)",
-                                 "Highway fuel economy (mpg)"),
-            float = FALSE,
-            out = "../output/table_reg.tex")
+  modelsummary(
+    list("City FE" = reg_cty, "Highway FE" = reg_hwy, "Both" = reg_hwy_cty),
+    output = "../output/table_reg.tex",
+    title = "Results")
 }
 
 city_figure <- function(data) {

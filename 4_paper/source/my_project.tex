@@ -17,6 +17,9 @@
 \usepackage{url}
 \usepackage[small]{caption}
 \usepackage[bottom,hang,flushmargin]{footmisc}
+\usepackage{siunitx}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs,longtable,siunitx}
 
 \DeclareMathOperator{\Var}{Var}
 \DeclareMathOperator{\Corr}{Corr}
@@ -109,16 +112,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 \pagebreak{}
 
-\begin{table}[htp]
-    \centering
-    \caption{\bf{Multae stellae}}
-    \label{tab:regression}
-    
-    \input{../input/table_reg.tex}
-    
-    %\floatfoot{Note: Insert notes here.}
-\end{table}
-
+\input{../input/table_reg.tex}
 
 \end{spacing}
 \end{document}
