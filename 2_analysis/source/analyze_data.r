@@ -32,9 +32,13 @@ regression_table <- function(data) {
   summary(reg_hwy_cty)
 
   modelsummary(
-    list("City FE" = reg_cty, "Highway FE" = reg_hwy, "Both" = reg_hwy_cty),
-    output = "../output/table_reg.tex",
-    title = "Results")
+    list("City FE"    = reg_cty,
+         "Highway FE" = reg_hwy,
+         "Both"       = reg_hwy_cty),
+    output     = "../output/table_reg.tex",
+    title      = "Results",
+    gof_omit = 'DF|Deviance|AIC|BIC|RMSE'
+  )
 }
 
 city_figure <- function(data) {

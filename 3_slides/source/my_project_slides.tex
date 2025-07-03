@@ -16,6 +16,20 @@
 \usepackage{xspace}
 \usepackage{booktabs}
 
+\usepackage{environ,adjustbox}
+% 1) Gather the body of every table environment in \BODY
+% 2) Replace it by an adjustbox of at most \textwidth
+\RenewEnviron{table}{%
+  \begin{adjustbox}{max width=\textwidth,center}%
+    \BODY
+  \end{adjustbox}%
+}
+
+
+\usepackage{siunitx}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs,siunitx,longtable}
+
 \setbeamercolor{normal text}{fg=mDarkTeal,bg=white}
 \definecolor{cardinalred}{rgb}{0.549, 0.082, 0.082}
 \setbeamercolor{progress bar}{ fg = white }
@@ -67,7 +81,13 @@
 
 \begin{frame}{xxx}
 
-    xxx
+    \input{../input/table_reg.tex}
+
+\end{frame}
+
+\begin{frame}{xxx}
+    \centering
+    \includegraphics[width=0.5\linewidth]{../input/figure_city.jpg}
   
 \end{frame}
 

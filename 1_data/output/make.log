@@ -1,6 +1,6 @@
 
-Script wrangle_data.r in Rscript started at 2025-07-03 14:53:49
-Script wrangle_data.r finished successfully at 2025-07-03 14:53:50
+Script wrangle_data.r in Rscript started at 2025-07-03 15:35:51
+Script wrangle_data.r finished successfully at 2025-07-03 15:35:51
 Output: ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
@@ -12,7 +12,4 @@ Output: ── Attaching core tidyverse packages ──────────�
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 
-The following files were created in wrangle_data.r:
-mpg.Rdata 
-
-make.sh finished at 2025-07-03 14:53:50
+make.sh finished at 2025-07-03 15:35:51
