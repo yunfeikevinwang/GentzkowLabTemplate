@@ -9,8 +9,7 @@
 # You can also use paths to folders:
 # /Users/username/GentzkowLabTemplate/examples/inputs_for_examples/
 INPUT_FILES=(
-    # /path/to/your/input/file.csv (replace with your actual input paths)
-    # Add more input paths as needed
+   ../1_data/output/mpg.Rdata
 )
 
 # Path to current module
