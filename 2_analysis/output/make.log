@@ -1,6 +1,6 @@
 
-Script analyze_data.r in Rscript started at 2025-07-03 11:45:36
-Script analyze_data.r finished successfully at 2025-07-03 11:45:37
+Script analyze_data.r in Rscript started at 2025-07-03 12:01:29
+Script analyze_data.r finished successfully at 2025-07-03 12:01:30
 Output: ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
@@ -19,7 +19,7 @@ Please cite as:
 
 
 % Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
-% Date and time: Thu, Jul 03, 2025 - 11:45:36
+% Date and time: Thu, Jul 03, 2025 - 12:01:29
 % Requires LaTeX packages: dcolumn 
 egin{tabular}{@{xtracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
 \[-1.8ex]\hline 
@@ -29,4 +29,4 @@ Please cite as:
 The following files were created in analyze_data.r:
 figure_hwy.jpg figure_city.jpg table_reg.tex 
 
-make.sh finished at 2025-07-03 11:45:37
+make.sh finished at 2025-07-03 12:01:30

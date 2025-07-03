@@ -1,6 +1,6 @@
 
-Script my_project_slides.tex in latexmk -pdf -bibtex started at 2025-07-03 11:45:37
-Script my_project_slides.tex finished successfully at 2025-07-03 11:45:39
+Script my_project_slides.tex in latexmk -pdf -bibtex started at 2025-07-03 12:01:30
+Script my_project_slides.tex finished successfully at 2025-07-03 12:01:32
 Output: Rc files read:
   NONE
 Latexmk: This is Latexmk, John Collins, 27 Dec. 2024. Version 4.86a.
@@ -613,4 +613,4 @@ Latexmk: All targets (my_project_slides.pdf) are up-to-date
 The following files were created in my_project_slides.tex:
 my_project_slides.pdf 
 
-make.sh finished at 2025-07-03 11:45:39
+make.sh finished at 2025-07-03 12:01:32

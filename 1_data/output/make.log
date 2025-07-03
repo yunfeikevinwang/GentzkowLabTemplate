@@ -1,6 +1,6 @@
 
-Script wrangle_data.r in Rscript started at 2025-07-03 11:45:35
-Script wrangle_data.r finished successfully at 2025-07-03 11:45:36
+Script wrangle_data.r in Rscript started at 2025-07-03 12:01:28
+Script wrangle_data.r finished successfully at 2025-07-03 12:01:29
 Output: ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
@@ -15,4 +15,4 @@ Output: ── Attaching core tidyverse packages ──────────�
 The following files were created in wrangle_data.r:
 mpg.Rdata 
 
-make.sh finished at 2025-07-03 11:45:36
+make.sh finished at 2025-07-03 12:01:29
