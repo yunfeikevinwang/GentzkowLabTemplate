@@ -1,0 +1,26 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Results},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+column{2,3,4}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{8}={1,2,3,4}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& City FE & Highway FE & Both \\ \midrule %% TinyTableHeader
+(Intercept) & \num{7.558} & \num{7.368} & \num{7.565} \\
+& (\num{0.521}) & (\num{0.306}) & (\num{0.453}) \\
+cty & \num{-0.242} &  & \num{-0.233} \\
+& (\num{0.022}) &  & (\num{0.127}) \\
+hwy &  & \num{-0.166} & \num{-0.007} \\
+&  & (\num{0.005}) & (\num{0.079}) \\
+Num.Obs. & \num{234} & \num{234} & \num{234} \\
+R2 & \num{0.638} & \num{0.587} & \num{0.638} \\
+R2 Adj. & \num{0.636} & \num{0.585} & \num{0.635} \\
+Std.Errors & by: year & by: year & by: year \\
+\bottomrule
+\end{talltblr}
+\end{table}
